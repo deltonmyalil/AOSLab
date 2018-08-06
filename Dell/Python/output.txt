@@ -1,0 +1,26 @@
+output.txt
+script.py
+total 8
+-rw-r--r-- 1 exam exam  21 Aug  6 17:03 output.txt
+-rw-r--r-- 1 exam exam 385 Aug  6 17:03 script.py
+delton
+output.txt
+script.py
+.
+..
+delton
+output.txt
+script.py
+total 12
+4 delton
+4 output.txt
+4 script.py
+.:
+delton
+output.txt
+script.py
+
+./delton:
+delton
+script.py
+output.txt
