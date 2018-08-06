@@ -1,0 +1,17 @@
+Hello World
+total 8
+-rwxr--r-- 1 exam exam 163 Aug  6 18:03 hello.pl
+-rw-r--r-- 1 exam exam  12 Aug  6 18:03 out.txt
+
+This is perl 5, version 24, subversion 1 (v5.24.1) built for x86_64-linux-gnu-thread-multi
+(with 75 registered patches, see perl -V for more detail)
+
+Copyright 1987-2017, Larry Wall
+
+Perl may be copied only under the terms of either the Artistic License or the
+GNU General Public License, which may be found in the Perl 5 source kit.
+
+Complete documentation for Perl, including FAQ lists, should be found on
+this system using "man perl" or "perldoc perl".  If you have access to the
+Internet, point your browser at http://www.perl.org/, the Perl Home Page.
+
