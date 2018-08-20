@@ -18,7 +18,7 @@ char buf2[] = "OS Linux";
 // This is how you create a hole in a file
 // 1. Write something in the first pointer location returned by the creat/open function
 // 2. Seek to another location
-// 3. Write something in that location
+// 3. Write something in that locationd
 int main() {
 	int fd;
 	// Highest permission given to files is 666
