@@ -1,0 +1,30 @@
+1. ls comand
+	ls command is the unix command to list the content of the current working directory.
+	parameters like -a(all), --author(print author of each file), -R(to list subdirectories recursively)
+	
+2. pr command
+	pr command is used to print the contents of the file to console
+	
+3. stty tostop
+	If there is a process running in the background and it is outputting constantly to your console, you may miss the foreground output among the chaos.
+	Use this command to stop the background process form outputting to console.
+
+4. 	lsof -p 1925
+	Here, 1925 was the PID of the bash
+	This gave me a list of open files for bash
+	Linux considers everything as files
+	
+5. fuser AOS_3rdSeptermber2018.doc
+	Returns the complete path followed by the process that is using that file
+	my result was 1877
+
+6. strings -eS
+	finds the strings in the file with a given encoding of S ie single 8-bit char
+	
+7. ipcs
+	This command shows info on inter process communications happening in the system
+	Parameters
+		7.1 -m: active shared memory systems are displayed
+		7.2 -p: shows pid of the creator and the last operator process
+		7.3 -q: shows info about active message queues
+		7.4 -s: shows info about active semaphore sessions

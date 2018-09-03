@@ -1,0 +1,41 @@
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ tr 'abcd 'jkmn' trTest
+> 
+> 
+> 
+> 
+> 
+> ^C
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ tr 'abcd 'jkmn' trTest>trTestOut.txt
+
+
+
+
+
+> 
+> 
+> 
+> ^C
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ tr "abcd" "jklm" trTest
+tr: extra operand ‘trTest’
+Try 'tr --help' for more information.
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ tr "abcd" "jklm" trTest>trTestOut.txt
+tr: extra operand ‘trTest’
+Try 'tr --help' for more information.
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ tr [a-z] [z-a]
+tr: range-endpoints of 'z-a' are in reverse collating sequence order
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ tr [a-d] [e-g]
+deltoin
+]eltoin
+delton
+]elton
+abcd
+efg]
+abcd
+efg]
+^C
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ tr [:lower:] [:upper:]
+deltonmantony
+DELTONMANTONY
+randomtext
+RANDOMTEXT
+

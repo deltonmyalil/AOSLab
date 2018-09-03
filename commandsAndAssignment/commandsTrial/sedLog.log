@@ -1,0 +1,57 @@
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ sed 's/boo/oob/g' sedTest
+oobt
+oobk
+oobze
+machine
+oobts
+bungie
+bark
+aardvark
+broken$tuff
+robots18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ sed --version
+sed (GNU sed) 4.4
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jay Fenlason, Tom Lord, Ken Pizzini,
+and Paolo Bonzini.
+GNU sed home page: <http://www.gnu.org/software/sed/>.
+General help using GNU software: <http://www.gnu.org/gethelp/>.
+E-mail bug reports to: <bug-sed@gnu.org>.
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ sed 's/boo|rk/oob/g' sedTest
+boot
+book
+booze
+machine
+boots
+bungie
+bark
+aardvark
+broken$tuff
+robots18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ sed 's/boo|rk/oob/g' sedTe
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ sed 's/boo|ark/oob/g' sedTest
+boot
+book
+booze
+machine
+boots
+bungie
+bark
+aardvark
+broken$tuff
+robots18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ sed 's/boo|ark/oob/g' sedT
+> 
+> ^C
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ sed 's/^/ /' sedTest
+ boot
+ book
+ booze
+ machine
+ boots
+ bungie
+ bark
+ aardvark
+ broken$tuff
+ robots18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ 

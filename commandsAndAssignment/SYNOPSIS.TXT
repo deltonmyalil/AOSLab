@@ -1,0 +1,18 @@
+18MCMI05
+Delton Myalil Antony
+
+++++++++++++++++++++++++++++++SYNOPSIS++++++++++++++++++++++++++++++++++
+
+AOS Lab - Monday, 3/9/2018
+
+Learned Commands:
+	Revised unix commands like awk, sed, tr, grep (from internet and notebook)
+	Learned the parameters of the same
+	Applied the commands on a test data file
+	Logged the output to a log file for each of the commands
+	Viva conducted by Mr. Sandeep
+	Committed all files to https://github.com/deltonmyalil/AOSLab
+
+Assignment:
+	Explained most of the unix commands given in the first question
+	

@@ -1,0 +1,175 @@
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ ls
+AOS_3rdSeptermber2018.doc            assignmentCommandsShellLog.log
+assignmentComandListExplanation.txt
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ man ls
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ pr
+^Z
+[1]+  Stopped                 pr
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ pr testFile
+
+
+2018-09-03 23:54                     testFile                     Page 1
+
+
+boot
+book
+booze
+machine
+boots
+bungie
+bark
+aardvark
+broken$tuff
+robots
+
+
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ man pr
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ 
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ stty tostop
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ stty
+speed 38400 baud; line = 0;
+-brkint -imaxbel iutf8
+tostop
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ ls -al
+total 80
+drwxr-xr-x 2 18mcmi05 mtech18  4096 Sep  4  2018 .
+drwxr-xr-x 3 18mcmi05 mtech18  4096 Sep  4  2018 ..
+-rw-r--r-- 1 18mcmi05 mtech18 64000 Sep  4  2018 AOS_3rdSeptermber2018.doc
+-rw-r--r-- 1 18mcmi05 mtech18   202 Sep  4  2018 assignmentComandListExplanation.txt
+-rw-r--r-- 1 18mcmi05 mtech18     0 Sep  4  2018 assignmentCommandsShellLog.log
+-rw-r--r-- 1 18mcmi05 mtech18    69 Sep  3  2018 testFile
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ ps -al
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 T  1671  1962  1925  0  80   0 -  1471 -      pts/0    00:00:00 pr
+0 R  1671  2003  1925  0  80   0 -  7466 -      pts/0    00:00:00 ps
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ ps -a
+  PID TTY          TIME CMD
+ 1962 pts/0    00:00:00 pr
+ 2004 pts/0    00:00:00 ps
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ man lsof
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ lsof -l 1962lsof: status error on 1962: No such file or directory
+lsof 4.89
+ latest revision: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/
+ latest FAQ: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/FAQ
+ latest man page: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/lsof_man
+ usage: [-?abhKlnNoOPRtUvVX] [+|-c c] [+|-d s] [+D D] [+|-E] [+|-e s] [+|-f[gG]]
+ [-F [f]] [-g [s]] [-i [i]] [+|-L [l]] [+m [m]] [+|-M] [-o [o]] [-p s]
+ [+|-r [t]] [-s [p:s]] [-S [t]] [-T [t]] [-u s] [+|-w] [-x [fl]] [--] [names]
+Use the ``-h'' option to get more help information.
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ lsof -p 200418mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ ls
+AOS_3rdSeptermber2018.doc            assignmentCommandsShellLog.log
+assignmentComandListExplanation.txt  testFile
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ ps
+  PID TTY          TIME CMD
+ 1925 pts/0    00:00:00 bash
+ 1962 pts/0    00:00:00 pr
+ 2047 pts/0    00:00:00 ps
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ lsof -p 204718mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ ps
+  PID TTY          TIME CMD
+ 1925 pts/0    00:00:00 bash
+ 1962 pts/0    00:00:00 pr
+ 2050 pts/0    00:00:00 ps
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ lsof -p 1925COMMAND  PID     USER   FD   TYPE DEVICE SIZE/OFF      NODE NAME
+bash    1925 18mcmi05  cwd    DIR   0,48     4096 238093029 /users/mtech/18mcmi05/Desktop/OSLab/commandsAndAssignment/Assignment (10.5.0.90:/users/mtech)
+bash    1925 18mcmi05  rtd    DIR    8,1     4096         2 /
+bash    1925 18mcmi05  txt    REG    8,1  1099016  20709383 /bin/bash
+bash    1925 18mcmi05  mem    REG    8,1  1689360  29360142 /lib/x86_64-linux-gnu/libc-2.24.so
+bash    1925 18mcmi05  mem    REG    8,1    14640  29360145 /lib/x86_64-linux-gnu/libdl-2.24.so
+bash    1925 18mcmi05  mem    REG    8,1   170776  29360217 /lib/x86_64-linux-gnu/libtinfo.so.5.9
+bash    1925 18mcmi05  mem    REG    8,1   153288  29360135 /lib/x86_64-linux-gnu/ld-2.24.so
+bash    1925 18mcmi05  mem    REG    8,1   217032   6946852 /var/cache/nscd/passwd
+bash    1925 18mcmi05  mem    REG    8,1  1679680  27787701 /usr/lib/locale/locale-archive
+bash    1925 18mcmi05  mem    REG    8,1    26258  27792327 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+bash    1925 18mcmi05    0u   CHR  136,0      0t0         3 /dev/pts/0
+bash    1925 18mcmi05    1u   CHR  136,0      0t0         3 /dev/pts/0
+bash    1925 18mcmi05    2u   CHR  136,0      0t0         3 /dev/pts/0
+bash    1925 18mcmi05  255u   CHR  136,0      0t0         3 /dev/pts/0
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ fuser AOS_3rdSeptermber2018.doc
+/users/mtech/18mcmi05/Desktop/OSLab/commandsAndAssignment/Assignment/AOS_3rdSeptermber2018.doc:  1877
+
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ strings -eS testFile
+boot
+book
+booze
+machine
+boots
+bungie
+bark
+aardvark
+broken$tuff
+robots
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ ipcs -m
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x00000000 229376     18mcmi05   600        393216     2          dest         
+0x00000000 262145     18mcmi05   600        393216     2          dest         
+0x00000000 425986     18mcmi05   600        393216     2          dest         
+0x00000000 622595     18mcmi05   600        524288     2          dest         
+0x00000000 5570564    18mcmi05   600        524288     2          dest         
+0x00000000 4227077    18mcmi05   600        393216     2          dest         
+0x00000000 4489222    18mcmi05   600        4194304    2          dest         
+0x00000000 4521991    18mcmi05   600        393216     2          dest         
+0x00000000 1048584    18mcmi05   600        393216     2          dest         
+0x00000000 4620297    18mcmi05   600        393216     2          dest         
+0x00000000 1146890    18mcmi05   600        524288     2          dest         
+0x00000000 1179659    18mcmi05   600        393216     2          dest         
+0x00000000 5111821    18mcmi05   600        393216     2          dest         
+0x00000000 5603342    18mcmi05   600        73728      2          dest         
+0x00000000 1769488    18mcmi05   600        3604480    2          dest         
+0x00000000 1966097    18mcmi05   600        20480      2          dest         
+0x00000000 1736722    18mcmi05   600        3604480    2          dest         
+0x00000000 2555923    18mcmi05   600        1708032    2          dest         
+0x00000000 1867796    18mcmi05   600        1708032    2          dest         
+0x00000000 2064405    18mcmi05   600        69632      2          dest         
+0x00000000 2097174    18mcmi05   600        90112      2          dest         
+0x00000000 2129943    18mcmi05   600        90112      2          dest         
+0x00000000 2195481    18mcmi05   600        282624     2          dest         
+0x00000000 2228250    18mcmi05   600        282624     2          dest         
+0x00000000 2392091    18mcmi05   600        32768      2          dest         
+0x00000000 3473436    18mcmi05   600        40960      2          dest         
+0x00000000 3506205    18mcmi05   600        16384      2          dest         
+
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ ipcs -m -p
+
+------ Shared Memory Creator/Last-op PIDs --------
+shmid      owner      cpid       lpid      
+229376     18mcmi05   956        556       
+262145     18mcmi05   956        556       
+425986     18mcmi05   959        2153      
+622595     18mcmi05   1001       556       
+5570564    18mcmi05   961        556       
+4227077    18mcmi05   1877       1886      
+4489222    18mcmi05   1920       2228      
+4521991    18mcmi05   1932       556       
+1048584    18mcmi05   957        2267      
+4620297    18mcmi05   2007       556       
+1146890    18mcmi05   957        2267      
+1179659    18mcmi05   957        2267      
+5111821    18mcmi05   2267       556       
+5603342    18mcmi05   1074       556       
+1769488    18mcmi05   1074       1475      
+1966097    18mcmi05   1074       1475      
+1736722    18mcmi05   1074       1475      
+2555923    18mcmi05   1074       556       
+1867796    18mcmi05   1074       1475      
+2064405    18mcmi05   1074       1475      
+2097174    18mcmi05   1074       1475      
+2129943    18mcmi05   1074       1475      
+2195481    18mcmi05   1074       1475      
+2228250    18mcmi05   1074       1475      
+2392091    18mcmi05   1074       556       
+3473436    18mcmi05   1074       556       
+3506205    18mcmi05   1074       556       
+
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ man ipcs
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ ipcs -q
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+
+18mcmi05@ailab_51:~/Desktop/OSLab/commandsAndAssignment/Assignment$ ipcs -s
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems     
+

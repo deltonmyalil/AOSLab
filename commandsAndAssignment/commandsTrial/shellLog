@@ -1,0 +1,43 @@
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ grep "boo" myFile
+boot
+book
+booze
+boots
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ grep "boo" myFile -v
+machine
+bungie
+bark
+aardvark
+broken$tuff
+robots
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ grep "boo" myFile -vn
+4:machine
+6:bungie
+7:bark
+8:aardvark
+9:broken$tuff
+10:robots
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ grep "boo" myFile -v -n
+4:machine
+6:bungie
+7:bark
+8:aardvark
+9:broken$tuff
+10:robots
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ grep "boo" myFile -c
+4
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ grep -l "boo" *
+myFile
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ grep -i "boo" myFile
+boot
+book
+booze
+boots
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ grep -i "BOo" myFile
+boot
+book
+booze
+boots
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ grep -x "boo" myFile
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ grep -x "book" myFile
+book

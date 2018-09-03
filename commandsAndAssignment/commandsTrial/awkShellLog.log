@@ -1,0 +1,31 @@
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ awk "BEGIN { print \"Hello, world!!\" }"
+awk "BEGIN { print \"Hello, worldsed 's/^/ /' sedTest\" }"
+Hello, worldsed 's/^/ /' sedTest
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ awk '{ print }'
+This was a triumph
+This was a triumph
+Im making a note here 
+Im making a note here
+Huge success
+Huge success
+It's hard to overstate my satisfaction
+It's hard to overstate my satisfaction
+And these points of data make a beautiful line 
+And these points of data make a beautiful line
+and we're out of beta we are releasing on time
+and we're out of beta we are releasing on time
+How do I stop this?
+How do I stop this?
+Ctrl-D I guess
+Ctrl-D I guess
+Here we go
+Here we go
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ awk 'BEGIN { print "Here is a single \
+> quote <'\''>" }'
+Here is a single quote <'>
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ ls -l . | awk '{ x += $5 } ; END \
+> { print "total bytes: " x }'
+total bytes: 68292
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ total bytes: 7449362
+bash: total: command not found
+18mcmi05@ailab_51:~/Desktop/OSLab/grepTutorial$ 
